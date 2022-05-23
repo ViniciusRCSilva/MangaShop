@@ -116,7 +116,7 @@ export function Header(){
                 <Menu>
                     <MenuButton>
                         <div className="flex flex-row items-center">
-                            <LinkTo linkPath={'/perfil'} linkName={'Meu perfil'} />
+                            <span>Meu perfil</span>
                             <UserCircle className="ml-1"/>
                             <CaretDown/>
                         </div> 
