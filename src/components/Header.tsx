@@ -7,7 +7,7 @@ import {
     MenuButton,
     MenuList,
     MenuItem
-  } from "@chakra-ui/react";
+} from "@chakra-ui/react";
 
 import {
     Popover,
@@ -92,7 +92,7 @@ export function Header(){
                         </MenuItem>
                         <MenuItem>
                             <div className="flex flex-row items-center mt-3 text-red-600">
-                                    <LinkTo linkPath={'/'} linkName={'Sair'} />
+                                    <LinkTo linkPath={'/inicio'} linkName={'Sair'} />
                                     <Power className="ml-1"/>
                             </div>
                         </MenuItem>
@@ -136,7 +136,7 @@ export function Header(){
                         </MenuItem>
                         <MenuItem>
                             <div className="flex flex-row items-center mt-3 text-red-600  link link-underline link-underline-black">
-                                <LinkTo linkPath={'/apresentacao'} linkName={'Sair'} />
+                                <LinkTo linkPath={'/inicio'} linkName={'Sair'} />
                                 <Power className="ml-1"/>
                             </div>
                         </MenuItem>
