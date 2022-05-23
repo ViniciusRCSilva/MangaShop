@@ -9,7 +9,7 @@ export function Home(){
 
             <div className="flex flex-col p-6">
                 <span className="flex flex-row items-center text-xl"><CaretRight /> Mangás recomendados para <span className="text-red-600 font-bold">você</span></span>
-                <div className="flex flex-row mt-6 items-center justify-around">
+                <div className="flex flex-col md:flex-row mt-6 items-center md:justify-around">
                     <MangaWindow 
                         image={'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/12/Berserk-41-destacada.jpg?fit=774%2C489&quality=99&strip=all&ssl=1'}
                         title={'Berserk'} 
