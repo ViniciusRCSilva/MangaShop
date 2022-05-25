@@ -28,7 +28,8 @@ export function Header(){
             <div className="hidden md:flex flex-row">
                 <input 
                     type="text" 
-                    className="rounded-l-3xl flex w-[25vw] focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none" 
+                    placeholder="Pesquise o nome do mangá..."
+                    className="rounded-l-3xl flex w-[25vw] focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none placeholder:text-zinc-400" 
                     onChange={event => setSearchContent(event.target.value)}
                 />
                 <button 
@@ -48,7 +49,8 @@ export function Header(){
                             <div className="flex flex-row mt-12 mr-3">
                                 <input 
                                     type="text" 
-                                    className="rounded-l-3xl flex w-[80vw] focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none"  
+                                    placeholder="Pesquise o nome do mangá..."
+                                    className="rounded-l-3xl flex w-[80vw] focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none placeholder:text-zinc-400"  
                                     onChange={event => setSearchContent(event.target.value)}
                                 />
                                 <button 
@@ -92,7 +94,7 @@ export function Header(){
                         </MenuItem>
                         <MenuItem>
                             <div className="flex flex-row items-center mt-3 text-red-600">
-                                    <LinkTo linkPath={'/inicio'} linkName={'Sair'} />
+                                    <LinkTo linkPath={'/apresentacao'} linkName={'Sair'} />
                                     <Power className="ml-1"/>
                             </div>
                         </MenuItem>
@@ -136,7 +138,7 @@ export function Header(){
                         </MenuItem>
                         <MenuItem>
                             <div className="flex flex-row items-center mt-3 text-red-600  link link-underline link-underline-black">
-                                <LinkTo linkPath={'/inicio'} linkName={'Sair'} />
+                                <LinkTo linkPath={'/apresentacao'} linkName={'Sair'} />
                                 <Power className="ml-1"/>
                             </div>
                         </MenuItem>
