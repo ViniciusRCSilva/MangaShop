@@ -8,6 +8,7 @@ import {
     MenuList,
     MenuItem
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export function Presentation(){
     return(
@@ -37,18 +38,22 @@ export function Presentation(){
                         </MenuButton>
                         <MenuList className="border-2 p-3 rounded-lg">
                             <MenuItem>
-                                <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
-                                    <GoogleLogo className="mr-2"/><LinkTo linkPath={'/'} linkName={'Google'} />
-                                </div>
+                                <Link to="/">
+                                    <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
+                                        <GoogleLogo className="mr-2"/><span>Google</span>
+                                    </div>
+                                </Link>
                             {/* <button 
                                     type="submit" 
                                     className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors"
                                 ><GoogleLogo className="mr-2"/> Google</button> */}
                             </MenuItem>
                             <MenuItem>
-                                <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors mt-3">
-                                    <FacebookLogo className="mr-2"/><LinkTo linkPath={'/'} linkName={'Facebook'} />
-                                </div>
+                                <Link to="/">
+                                    <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
+                                        <FacebookLogo className="mr-2"/><span>Facebook</span>
+                                    </div>
+                                </Link>
                             {/* <button 
                                     type="submit" 
                                     className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors mt-3"

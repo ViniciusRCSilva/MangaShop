@@ -1,4 +1,5 @@
 import { FacebookLogo, GoogleLogo } from "phosphor-react";
+import { Link } from "react-router-dom";
 import { LinkTo } from "./LinksForHeader/LinkTo";
 
 export function AuthContent(){
@@ -8,17 +9,21 @@ export function AuthContent(){
                 <h1 className="mb-3">Autentique através:</h1>
 
                 <div className="flex flex-col items-center">
-                    <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
-                        <GoogleLogo className="mr-2"/><LinkTo linkPath={'/cadastrar'} linkName={'Google'} />
-                    </div>
+                    <Link to="/">
+                        <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
+                            <GoogleLogo className="mr-2"/><span>Google</span>
+                        </div>
+                    </Link>
                 {/* <button 
                         type="submit" 
                         className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors"
                     ><GoogleLogo className="mr-2"/> Google</button> */}
                     
-                    <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors mt-3">
-                        <FacebookLogo className="mr-2"/><LinkTo linkPath={'/cadastrar'} linkName={'Facebook'} />
-                    </div>
+                    <Link to="/">
+                        <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
+                            <FacebookLogo className="mr-2"/><span>Facebook</span>
+                        </div>
+                    </Link>
                 {/* <button 
                             type="submit" 
                             className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors mt-3"
