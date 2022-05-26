@@ -5,10 +5,10 @@ interface LinkProps{
     linkName?: String
 }
 
-export function LinkTo(props: LinkProps){
+export function LinkTo({ linkPath, linkName }: LinkProps){
     return(     
-        <Link to={String(props.linkPath)}>
-            <span>{props.linkName}</span>
+        <Link to={String(linkPath)}>
+            <span>{linkName}</span>
         </Link>
     )
 }
