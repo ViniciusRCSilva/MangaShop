@@ -11,8 +11,8 @@ import { ViewsProfile } from "../components/OptionsSelectionProfile/ViewsProfile
 export interface ProfileContentProps {
     name?: String,
     nick?: String,
-    address: String,
-    number: String,
+    address?: String,
+    number?: String,
 }
 
 export function Profile({ name, nick, address, number }: ProfileContentProps) {
