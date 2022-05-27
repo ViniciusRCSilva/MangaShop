@@ -1,4 +1,4 @@
-import { ProfileContentProps } from '../ProfileContent'
+import { ProfileContentProps } from '../../pages/Profile'
 
 export function InfoProfile({ address, number }: ProfileContentProps) {
     return (
