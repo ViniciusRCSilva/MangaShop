@@ -3,5 +3,6 @@ module.exports = {
   theme: {},
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwind-scrollbar'),
   ],
 }
