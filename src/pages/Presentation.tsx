@@ -39,7 +39,7 @@ export function Presentation(){
                         <MenuList className="border-2 p-3 rounded-lg">
                             <MenuItem>
                                 <Link to="/">
-                                    <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
+                                    <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl mb-3 transition-colors">
                                         <GoogleLogo className="mr-2"/><span>Google</span>
                                     </div>
                                 </Link>

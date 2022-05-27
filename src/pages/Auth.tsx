@@ -8,8 +8,8 @@ export function Auth(){
                 <h1 className="mb-3">Autentique através:</h1>
 
                 <div className="flex flex-col items-center">
-                    <Link to="/">
-                        <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
+                    <Link to="/cadastrar">
+                        <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl mb-3 transition-colors">
                             <GoogleLogo className="mr-2"/><span>Google</span>
                         </div>
                     </Link>
@@ -18,7 +18,7 @@ export function Auth(){
                         className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors"
                     ><GoogleLogo className="mr-2"/> Google</button> */}
                     
-                    <Link to="/">
+                    <Link to="/cadastrar">
                         <div className="flex flex-row items-center justify-center w-[200px] bg-red-600 md:bg-zinc-400 hover:bg-red-600 text-zinc-50 p-3 rounded-3xl transition-colors">
                             <FacebookLogo className="mr-2"/><span>Facebook</span>
                         </div>
