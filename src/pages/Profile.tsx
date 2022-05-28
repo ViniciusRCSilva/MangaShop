@@ -1,7 +1,7 @@
 import { ClockCounterClockwise, Gear, Heart, ShoppingBagOpen, Tag, UserList } from "phosphor-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
-import { LinkTo } from "../components/LinksForHeader/LinkTo";
 import { CouponProfile } from "../components/OptionsSelectionProfile/CouponProfile";
 import { FavProfile } from "../components/OptionsSelectionProfile/FavProfile";
 import { InfoProfile } from "../components/OptionsSelectionProfile/InfoProfile";
@@ -42,12 +42,15 @@ export function Profile({ name, nick, address, number }: ProfileContentProps) {
                             </div>
                         </div>
 
-                        <div className="flex flex-row h-7 link link-underline link-underline-black">
-                            <Gear className="text-2xl mr-2" />
-                            <div className="hidden md:flex">
-                                <LinkTo linkPath={'/perfil'} linkName={'Editar'}></LinkTo>
+                        <Link to='/perfil'>
+                            <div className="flex flex-row h-7 link link-underline link-underline-black">
+                                <Gear className="text-2xl mr-2" />
+                                <div className="hidden md:flex">
+                                    <span>Editar</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+
                     </div>
 
                     <div className="flex flex-col w-full md:w-[50%] h-full rounded-xl p-6">
@@ -83,7 +86,7 @@ export function Profile({ name, nick, address, number }: ProfileContentProps) {
                             </div>
                         </div>
 
-                        <div className="flex flex-col border-2 mt-3 rounded-lg justify-center h-full p-4 overflow-x-auto scrollbar-thumb-red-600 scrollbar-track-transparent scrollbar-thin">
+                        <div className="flex flex-col border-2 mt-3 rounded-lg h-full p-4">
                             {contentView === 'info' && (
                                 <InfoProfile address={address} number={number} />
                             )}
