@@ -27,7 +27,7 @@ export function Profile({ name, nick, address, number }: ProfileContentProps) {
             <Header />
 
             <div className="fixed w-full h-full">
-                <div className="flex flex-col items-start justify-center md:items-center mt-10 w-full h-[50vh]">
+                <div className="flex flex-col items-start justify-center md:items-center mt-10 w-full h-[70vh]">
 
                     <div className="flex flex-row justify-between w-[90%] ml-6 md:w-[50%] md:ml-0">
 
@@ -83,7 +83,7 @@ export function Profile({ name, nick, address, number }: ProfileContentProps) {
                             </div>
                         </div>
 
-                        <div className="flex flex-col border-2 mt-3 rounded-lg h-full p-4 overflow-x-auto">
+                        <div className="flex flex-col border-2 mt-3 rounded-lg justify-center h-full p-4 overflow-x-auto scrollbar-thumb-red-600 scrollbar-track-transparent scrollbar-thin">
                             {contentView === 'info' && (
                                 <InfoProfile address={address} number={number} />
                             )}
