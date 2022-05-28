@@ -41,8 +41,8 @@ export function Profile({ name, nick, address, number }: ProfileContentProps) {
                         </div>
                     </div>
 
-                    <Link to='/perfil'>
-                        <div className="flex flex-row h-7 link link-underline link-underline-black">
+                    <Link to='/perfil' className="h-6">
+                        <div className="flex flex-row link link-underline link-underline-black">
                             <Gear className="text-2xl mr-2" />
                             <div className="hidden md:flex">
                                 <span>Editar</span>
