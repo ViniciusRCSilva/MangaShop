@@ -26,6 +26,18 @@ export function FavProfile(){
                 title={'Dragon Ball'} 
                 tag={'Fantasia | Luta...'} 
             />
+
+            <MangaWindow 
+                image={'https://images-na.ssl-images-amazon.com/images/I/51bBdrgiEfL._SX341_BO1,204,203,200_.jpg'}
+                title={'Dragon Ball'} 
+                tag={'Fantasia | Luta...'} 
+            />
+
+            <MangaWindow 
+                image={'https://images-na.ssl-images-amazon.com/images/I/51bBdrgiEfL._SX341_BO1,204,203,200_.jpg'}
+                title={'Dragon Ball'} 
+                tag={'Fantasia | Luta...'} 
+            />
         </div>
     )
 }
