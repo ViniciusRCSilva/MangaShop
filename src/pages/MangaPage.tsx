@@ -30,7 +30,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center p-4">
+                <div className="flex flex-col items-center w-[90vw]">
 
                     <div className="flex flex-row w-full border-2 border-red-600 rounded-t-3xl p-4 justify-between">
                         <div className="flex flex-col">
