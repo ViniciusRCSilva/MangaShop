@@ -1,4 +1,5 @@
 import { CaretRight } from "phosphor-react";
+import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
 import { MangaWindow } from "../components/MangaWindow";
 
@@ -10,12 +11,14 @@ export function Home(){
             <div className="flex flex-col p-6">
                 <span className="flex flex-row items-center text-xl"><CaretRight /> Mangás recomendados para<span className="text-red-600 font-bold ml-2">você</span></span>
                 <div className="flex flex-col md:flex-row mt-6 items-center md:justify-around">
-                    <MangaWindow 
-                        image={'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/12/Berserk-41-destacada.jpg?fit=774%2C489&quality=99&strip=all&ssl=1'}
-                        title={'Berserk'} 
-                        desc={'é uma série de mangá escrita e ilustrada por Kentaro Miura. Situado em um mundo de fantasia sombria inspirado na Europa ...'}
-                        tag={'Fantasia Sombria | Alta Fantasia...'} 
-                    />
+                    <Link to={'/pagina'}>
+                        <MangaWindow 
+                            image={'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/12/Berserk-41-destacada.jpg?fit=774%2C489&quality=99&strip=all&ssl=1'}
+                            title={'Berserk'} 
+                            desc={'é uma série de mangá escrita e ilustrada por Kentaro Miura. Situado em um mundo de fantasia sombria inspirado na Europa ...'}
+                            tag={'Fantasia Sombria | Alta Fantasia...'} 
+                        />
+                    </Link>
 
                     <MangaWindow 
                         image={'https://images-na.ssl-images-amazon.com/images/I/81U8UDy4ojL.jpg'}
