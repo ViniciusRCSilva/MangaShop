@@ -38,7 +38,8 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                             <span className="mb-1">Edições:</span>
 
                             <Select 
-                                className="border-red-600 rounded-3xl pl-5 pr-5 cursor-pointer focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none"
+                                color='white'
+                                className="border-red-600 rounded-3xl text-black pl-5 pr-5 cursor-pointer focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none"
                             >
                                 <option value="">1</option>
                                 <option value="">2</option>
