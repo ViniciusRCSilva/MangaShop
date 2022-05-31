@@ -16,8 +16,8 @@ export function Presentation(){
             <HeaderPresentation/>
 
             <div className="flex flex-row items-center justify-center">
-                <div className="hidden md:flex w-[50%] h-[85vh]">
-                    <img src="../src/img/wallpaper_cortado.png" alt="" />
+                <div className="hidden md:flex w-[50%] h-[89.5vh]">
+                    <img src="../src/img/wallpaper.jpg" alt="wallpaper" className="border-red-600 border-r-4 shadow-xl shadow-red-600" />
                 </div>
 
                 <div className="flex flex-col w-full md:w-[50%] h-[85vh] md:h-auto justify-center items-center font-['Akshar']">
