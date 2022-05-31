@@ -18,7 +18,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
 
             <div className="flex flex-col md:flex-row justify-around items-center w-full h-[80vh]">
 
-                <div className="flex flex-col p-4">
+                <div className="flex flex-col w-[90vw] md:w-[500px]">
                     <span className="text-xl font-bold">{title}</span>
 
                     <div className="rounded-t-xl border-red-600 border-2">
@@ -30,7 +30,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center w-[90vw]">
+                <div className="flex flex-col items-center w-[90vw] md:w-[500px]">
 
                     <div className="flex flex-row w-full border-2 border-red-600 rounded-t-3xl p-4 justify-between">
                         <div className="flex flex-col">
@@ -59,12 +59,12 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                         <span className="ml-2">Adicionar ao carrinho</span>
                     </button>
 
-                    <div className="flex flex-row border-2 border-red-600 rounded-3xl items-center justify-center p-3 mt-10">
+                    <div className="flex flex-row w-[90vw] md:w-[500px] border-2 border-red-600 rounded-3xl items-center justify-center p-3 mt-10">
                         <Truck className="w-6 h-6"/>
                         <span className="mr-2 ml-2">Calcular Frete:</span>
                         <input 
                             placeholder="00000-000" 
-                            className="border-1 rounded-3xl focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none" 
+                            className="border-1 rounded-3xl w-32 md:auto focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none" 
                             type="tel"
                             pattern="[0-9]{5}-[0-9]{3}"
                             maxLength={9}
