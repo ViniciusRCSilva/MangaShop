@@ -43,7 +43,7 @@ export function Profile({ name, nick, cep, address, complement, number }: Profil
                         </div>
                     </div>
 
-                    <Link to='/perfil' className="h-6">
+                    <Link to='/editarPerfil' className="h-6">
                         <div className="flex flex-row link link-underline link-underline-black">
                             <Gear className="text-2xl mr-2" />
                             <div className="hidden md:flex">

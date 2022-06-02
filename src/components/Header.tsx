@@ -132,7 +132,7 @@ export function Header(){
                         </MenuItem>
                         <MenuItem>
                             <div className="flex flex-row items-center mt-1 link link-underline link-underline-black">
-                                <LinkTo linkPath={'/'} linkName={'Editar Perfil'} />
+                                <LinkTo linkPath={'/editarPerfil'} linkName={'Editar Perfil'} />
                                 <Gear className="ml-1"/>
                             </div>                        
                         </MenuItem>
