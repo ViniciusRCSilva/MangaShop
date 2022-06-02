@@ -11,11 +11,13 @@ import { ViewsProfile } from "../components/OptionsSelectionProfile/ViewsProfile
 export interface ProfileContentProps {
     name?: String,
     nick?: String,
+    cep?: String,
     address?: String,
+    complement?: String,
     number?: String,
 }
 
-export function Profile({ name, nick, address, number }: ProfileContentProps) {
+export function Profile({ name, nick, cep, address, complement, number }: ProfileContentProps) {
     const [contentView, setContentView] = useState<'info' | 'favorites' | 'views' | 'coupons' | 'ordered'>('info')
 
     function handleChangeView(view: 'info' | 'favorites' | 'views' | 'coupons' | 'ordered') {
@@ -87,7 +89,7 @@ export function Profile({ name, nick, address, number }: ProfileContentProps) {
 
                     <div className="flex flex-col border-2 mt-3 rounded-lg h-full p-4">
                         {contentView === 'info' && (
-                            <InfoProfile address={address} number={number} />
+                            <InfoProfile cep={cep} address={address} number={number} complement={complement} />
                         )}
                         {contentView === 'favorites' && (
                             <FavProfile />
