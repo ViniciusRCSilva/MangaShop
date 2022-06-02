@@ -7,6 +7,7 @@ import { Presentation } from "./pages/Presentation";
 import { Profile } from "./pages/Profile";
 import { Register } from "./pages/Register";
 import { MangaPage } from "./pages/MangaPage";
+import { EditProfile } from "./pages/EditProfile";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         />} 
       />
       <Route path="/perfil" element={<Profile />} />
+      <Route path="/editarPerfil" element={<EditProfile />} />
     </Routes>
   )
 }
