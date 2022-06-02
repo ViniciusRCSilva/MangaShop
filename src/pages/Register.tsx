@@ -44,6 +44,8 @@ export function Register(){
                         <input 
                             className="w-[245px] border-1 hover:border-red-600 rounded-3xl focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none" 
                             type="date"
+                            placeholder="Data de Aniversário"
+                            name="Data de Aniversário"
                             onChange={event => setBirth(event.target.value)}
                         />
                     </div>
