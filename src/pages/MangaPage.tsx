@@ -21,7 +21,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                 <div className="flex flex-col w-[90vw] md:w-[500px]">
                     <span className="text-xl font-bold">{title}</span>
 
-                    <div className="rounded-t-xl border-red-600 border-2">
+                    <div className="rounded-t-xl">
                         <div style={{backgroundImage: `url(${image})`}} className="md:w-full h-20 md:h-[400px] bg-[url(backgroundImage)] rounded-t-md bg-center bg-cover"></div>
                     </div>
 
