@@ -29,7 +29,7 @@ export function Header(){
                 <input 
                     type="text" 
                     placeholder="Pesquise o nome do mangá..."
-                    className="rounded-l-3xl flex w-[25vw] focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none placeholder:text-zinc-400" 
+                    className="rounded-l-3xl flex w-[25vw] hover:border-red-600 focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none placeholder:text-zinc-400" 
                     onChange={event => setSearchContent(event.target.value)}
                 />
                 <button 
