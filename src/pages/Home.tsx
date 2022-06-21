@@ -8,7 +8,7 @@ export function Home(){
         <div>
             <Header />
 
-            <div className="flex flex-col p-6">
+            <div className="flex flex-col p-6 pt-[150px]">
                 <span className="flex flex-row items-center text-xl"><CaretRight /> Mangás recomendados para<span className="text-red-600 font-bold ml-2">você</span></span>
                 <div className="flex flex-col md:flex-row mt-6 items-center md:justify-around">
                     <Link to={'/pagina'}>

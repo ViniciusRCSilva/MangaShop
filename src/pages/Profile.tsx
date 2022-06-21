@@ -28,7 +28,7 @@ export function Profile({ name, nick, cep, address, complement, number }: Profil
         <div>
             <Header />
 
-            <div className="flex flex-col items-start justify-center md:items-center mt-10 w-full h-[80vh]">
+            <div className="flex flex-col items-start justify-center md:items-center pt-[150px] w-full h-full">
 
                 <div className="flex flex-row justify-between w-[90%] ml-6 md:w-[50%] md:ml-0">
 

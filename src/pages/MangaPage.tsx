@@ -16,10 +16,10 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
             
             <Header/>
 
-            <div className="flex flex-col md:flex-row justify-around items-center w-full h-[80vh]">
+            <div className="flex flex-col md:flex-row justify-around items-center w-full h-[80vh] pt-[250px]">
 
-                <div className="flex flex-col w-[90vw] md:w-[500px]">
-                    <span className="text-xl font-bold">{title}</span>
+                <div className="flex flex-col w-[90vw] md:w-[500px] mb-8">
+                    <span className="text-xl font-bold uppercase">{title}</span>
 
                     <div className="rounded-t-xl">
                         <div style={{backgroundImage: `url(${image})`}} className="md:w-full h-20 md:h-[400px] bg-[url(backgroundImage)] rounded-t-md bg-center bg-cover"></div>
@@ -62,7 +62,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
 
                     <div className="flex flex-row w-[90vw] md:w-[500px] border-2 border-red-600 rounded-3xl items-center justify-center p-3 mt-10">
                         <Truck className="w-6 h-6"/>
-                        <span className="mr-2 ml-2">Calcular Frete:</span>
+                        <span className="text-sm md:text-base mr-2 ml-2">Calcular Frete:</span>
                         <input 
                             placeholder="00000-000" 
                             className="border-1 rounded-3xl w-32 md:auto focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none" 
