@@ -16,9 +16,9 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
             
             <Header/>
 
-            <div className="flex flex-col md:flex-row justify-around items-center w-full h-[80vh] pt-[250px]">
+            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col md:flex-row justify-around items-center w-full h-[100vh] pt-[150px]">
 
-                <div className="flex flex-col w-[90vw] md:w-[500px] mb-8">
+                <div className="flex flex-col w-[90vw] md:w-[500px]">
                     <span className="text-xl font-bold uppercase">{title}</span>
 
                     <div className="rounded-t-xl">
@@ -38,8 +38,8 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                             <span className="mb-1">Edições:</span>
 
                             <Select 
-                                color='white'
-                                className="border-red-600 rounded-3xl text-black pl-5 pr-5 cursor-pointer focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none"
+                                color='transparent'
+                                className="border-red-600 rounded-3xl text-black dark:bg-gray-900 dark:text-zinc-50 pl-5 pr-5 cursor-pointer focus:border-red-600 focus:ring-red-600 focus:ring-1 focus:outline-none"
                             >
                                 <option value="">1</option>
                                 <option value="">2</option>
@@ -60,7 +60,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
                         <span className="ml-2">Adicionar ao carrinho</span>
                     </button>
 
-                    <div className="flex flex-row w-[90vw] md:w-[500px] border-2 border-red-600 rounded-3xl items-center justify-center p-3 mt-10">
+                    <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-row w-[90vw] md:w-[500px] border-2 border-red-600 rounded-3xl items-center justify-center p-3 mt-10">
                         <Truck className="w-6 h-6"/>
                         <span className="text-sm md:text-base mr-2 ml-2">Calcular Frete:</span>
                         <input 

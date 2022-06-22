@@ -20,7 +20,7 @@ export function Header(){
     const [searchContent, setSearchContent] = useState('')
 
     return(
-        <div className="fixed w-full bg-zinc-50">
+        <div className="fixed w-full bg-zinc-50 dark:bg-slate-800 dark:text-zinc-50">
             <div className="flex flex-row items-center justify-between pl-6 pr-6 pt-6 pb-6 shadow-lg">
                 <div className="text-xl font-bold font-['Kaushan_Script'] bg-red-600 hover:bg-red-500 transition-colors text-zinc-50 p-3 rounded-xl">
                     <LinkTo linkPath={'/'} linkName={'MANGÁ SHOP'} />
@@ -40,7 +40,7 @@ export function Header(){
                     ><MagnifyingGlass/></button>
                 </div>
 
-                <div className="flex flex-row items-center md:hidden">
+                <div className="flex flex-row items-center md:hidden dark:bg-slate-800 dark:text-zinc-50">
                     <Popover>
                         <PopoverTrigger>
                             <MagnifyingGlass className="w-6 h-6 mr-6"/>
@@ -68,7 +68,7 @@ export function Header(){
                         <MenuButton>
                             <List className="w-8 h-8"/>
                         </MenuButton>
-                        <MenuList className="bg-white p-3 rounded-md border-2">
+                        <MenuList className="bg-white dark:bg-slate-800 dark:text-zinc-50 p-3 rounded-md border-2">
                             <MenuItem>
                                 <div className="flex flex-row items-center mt-1 mr-5">
                                     <LinkTo linkPath={'/'} linkName={'Início'} />
@@ -124,7 +124,7 @@ export function Header(){
                                 <CaretDown/>
                             </div> 
                         </MenuButton>
-                        <MenuList className="bg-white p-3 rounded-md border-2">
+                        <MenuList className="bg-white dark:bg-slate-800 dark:text-zinc-50 p-3 rounded-md border-2">
                             <MenuItem>
                                 <div className="flex flex-row items-center mt-1 link link-underline link-underline-black">
                                     <LinkTo linkPath={'/perfil'} linkName={'Visualizar Perfil'} />
@@ -138,7 +138,7 @@ export function Header(){
                                 </div>                        
                             </MenuItem>
                             <MenuItem>
-                                <div className="flex flex-row items-center mt-3 text-red-600  link link-underline link-underline-black">
+                                <div className="flex flex-row items-center mt-3 text-red-500  link link-underline link-underline-black">
                                     <LinkTo linkPath={'/apresentacao'} linkName={'Sair'} />
                                     <Power className="ml-1"/>
                                 </div>
