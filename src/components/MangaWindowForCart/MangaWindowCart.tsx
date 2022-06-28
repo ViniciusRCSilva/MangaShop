@@ -8,7 +8,7 @@ interface MangaWindowCartProps{
 
 export function MangaWindowCart({ image, title, edition }: MangaWindowCartProps){
     return(
-        <div className="flex flex-row items-center mb-6 w-full justify-between border-red-600 border-2 rounded-full">
+        <div className="flex flex-row items-center w-full justify-between border-red-600 border-2 rounded-full">
             <div className="flex flex-row items-center">
                 <div style={{backgroundImage: `url(${image})`}} className="w-[80px] md:w-[196px] h-20 bg-[url(backgroundImage)] rounded-l-full bg-center bg-cover"></div>
                 <div className="flex flex-col md:flex-row items-start md:items-end ml-4">
