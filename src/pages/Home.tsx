@@ -11,7 +11,7 @@ export function Home(){
             <div className="flex flex-col p-6 pt-[150px] dark:bg-gray-900 dark:text-zinc-50 md:h-[100vh]">
                 <span className="flex flex-row items-center text-xl"><CaretRight /> Mangás recomendados para<span className="text-red-600 font-bold ml-2">você</span></span>
                 <div className="flex flex-col md:grid md:grid-cols-4 md:gap-6 mt-6 mb-6 items-center">
-                    <Link to={'/pagina'}>
+                    <Link to={'/manga/berserk'}>
                         <MangaWindow 
                             image={'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/12/Berserk-41-destacada.jpg?fit=774%2C489&quality=99&strip=all&ssl=1'}
                             title={'Berserk'} 
@@ -20,12 +20,14 @@ export function Home(){
                         />
                     </Link>
 
-                    <MangaWindow 
-                        image={'https://images-na.ssl-images-amazon.com/images/I/81U8UDy4ojL.jpg'}
-                        title={'Baki'} 
-                        desc={'Baki Hanma é um estudante geralmente feliz com um hobby bastante estranho; ele gosta de lutar...'}
-                        tag={'Luta...'} 
-                    />
+                    <Link to={'/manga/baki'}>
+                        <MangaWindow 
+                            image={'https://images-na.ssl-images-amazon.com/images/I/81U8UDy4ojL.jpg'}
+                            title={'Baki'} 
+                            desc={'Baki Hanma é um estudante geralmente feliz com um hobby bastante estranho; ele gosta de lutar...'}
+                            tag={'Luta...'} 
+                        />
+                    </Link>
 
                     <MangaWindow 
                         image={'https://static.mangajar.com/posters/1367/XDauD7DlRN1iJct96BBdaHcf7nx78yJZyFsRyLIK.png'}
@@ -44,7 +46,7 @@ export function Home(){
 
                 <span className="flex flex-row items-center text-xl"><CaretRight /> Veja também:</span>
                 <div className="flex flex-col md:grid md:grid-cols-4 md:gap-6 mt-6 mb-6 items-center">
-                    <Link to={'/pagina'}>
+                    <Link to={'/manga'}>
                         <MangaWindow 
                             image={'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/12/Berserk-41-destacada.jpg?fit=774%2C489&quality=99&strip=all&ssl=1'}
                             title={'Berserk'} 

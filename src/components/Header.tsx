@@ -20,7 +20,7 @@ export function Header(){
     const [searchContent, setSearchContent] = useState('')
 
     return(
-        <div className="fixed w-full bg-zinc-50 dark:bg-slate-800 dark:text-zinc-50">
+        <div className="fixed w-full bg-white dark:bg-slate-800 dark:text-zinc-50">
             <div className="flex flex-row items-center justify-between pl-6 pr-6 pt-6 pb-6 shadow-lg">
                 <div className="text-xl font-bold font-['Kaushan_Script'] bg-red-600 hover:bg-red-500 transition-colors text-zinc-50 p-3 rounded-xl">
                     <LinkTo linkPath={'/'} linkName={'MANGÁ SHOP'} />

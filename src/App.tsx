@@ -18,11 +18,11 @@ export default function App() {
       <Route path="/cadastrar" element={<Register />} />
       <Route path="/categorias" element={<Categories />} />
       <Route path="/carrinho" element={<Cart />} />
-      <Route path="/pagina" element={<MangaPage 
-          title={'Berserk'}
-          price={'24,99'}
-          image={'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/12/Berserk-41-destacada.jpg?fit=774%2C489&quality=99&strip=all&ssl=1'}
-          desc={'é uma série de mangá escrita e ilustrada por Kentaro Miura. Situado em um mundo de fantasia sombria inspirado na Europa ...'}
+      <Route path="/manga/:title" element={<MangaPage 
+          title={'Teste'}
+          price={'0,00'}
+          image={'https://miro.medium.com/max/640/0*i1v1In2Tn4Stnwnl.jpg'}
+          desc={'Descrição teste blablabla'}
         />} 
       />
       <Route path="/perfil" element={<Profile />} />
