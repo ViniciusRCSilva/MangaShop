@@ -16,7 +16,7 @@ export function MangaPage({ image, desc, price, title }: MangaPageProps){
             
             <Header/>
 
-            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col md:flex-row justify-around items-center w-full h-[100vh] pt-[150px]">
+            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col md:flex-row justify-around items-center w-full h-[100vh] pt-[150px] font-['Quicksand']">
 
                 <div className="flex flex-col w-[90vw] md:w-[500px]">
                     <span className="text-xl font-bold uppercase">{title}</span>

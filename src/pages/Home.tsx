@@ -8,7 +8,7 @@ export function Home(){
         <div>
             <Header />
 
-            <div className="flex flex-col p-6 pt-[150px] dark:bg-gray-900 dark:text-zinc-50 md:h-[100vh]">
+            <div className="flex flex-col p-6 pt-[150px] dark:bg-gray-900 dark:text-zinc-50 md:h-[100vh] font-['Quicksand']">
                 <span className="flex flex-row items-center text-xl"><CaretRight /> Mangás recomendados para<span className="text-red-600 font-bold ml-2">você</span></span>
                 <div className="flex flex-col md:grid md:grid-cols-4 md:gap-6 mt-6 mb-6 items-center">
                     <Link to={'/manga/berserk'}>

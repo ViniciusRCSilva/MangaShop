@@ -20,7 +20,7 @@ export function Header(){
     const [searchContent, setSearchContent] = useState('')
 
     return(
-        <div className="fixed w-full bg-white dark:bg-slate-800 dark:text-zinc-50">
+        <div className="fixed w-full bg-white dark:bg-slate-800 dark:text-zinc-50 font-['Quicksand']">
             <div className="flex flex-row items-center justify-between pl-6 pr-6 pt-6 pb-6 shadow-lg">
                 <div className="flex flex-row items-center text-xl font-bold font-['Raleway'] text-red-600 hover:text-red-500 transition-colors">
                     <LinkTo linkPath={'/'} linkName={'mangáSHOP'} />

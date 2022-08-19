@@ -7,7 +7,7 @@ export function Cart(){
         <div>
             <Header />
 
-            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col p-6 pt-[150px] w-full h-full">
+            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col p-6 pt-[150px] w-full h-full font-['Quicksand']">
                 <span className="flex flex-row items-center text-xl"><ShoppingCart className="mr-1 text-red-600"/>Itens no Carrinho</span>
 
                 <div className="mt-3 rounded-lg h-full p-4">

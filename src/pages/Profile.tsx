@@ -28,7 +28,7 @@ export function Profile({ name, nick, cep, address, complement, number }: Profil
         <div>
             <Header />
 
-            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col items-start justify-center md:items-center pt-[150px] w-full h-[100vh]">
+            <div className="dark:bg-gray-900 dark:text-zinc-50 flex flex-col items-start justify-center md:items-center pt-[150px] w-full h-[100vh] font-['Quicksand']">
 
                 <div className="flex flex-row justify-between w-[90%] ml-6 md:w-[50%] md:ml-0">
 
