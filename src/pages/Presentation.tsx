@@ -17,16 +17,12 @@ export function Presentation(){
             <HeaderPresentation/>
 
             <div className="flex flex-row items-center justify-center">
-{/*                 <div className="hidden md:flex w-[50%] h-[89.5vh]">
-                    <img src="../src/img/wallpaper.jpg" alt="wallpaper" className="border-red-600 border-r-4 shadow-xl shadow-red-600" />
-                </div> */}
-
-                <div className="flex flex-col w-full h-[85vh] justify-center items-center font-['Akshar']">
-                    <h1 className="text-5xl md:text-8xl font-bold">Sejam Bem-Vindos!</h1>
+                <div className="flex flex-col w-full h-[85vh] justify-center items-center font-['Quicksand']">
+                    <h1 className="text-4xl md:text-8xl font-bold">Sejam Bem-Vindos!</h1>
                     <div className="flex flex-col items-center text-2xl md:text-3xl mt-5">
                         <p>Aqui você encontrará o Mangá</p>
                         <p>de sua</p>
-                        <b>Preferência</b>
+                        <b className="animate-[colorChange_2s_infinite]">Preferência</b>
                     </div>
 
                 <div className="flex flex-row mt-6">
