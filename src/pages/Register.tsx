@@ -1,6 +1,8 @@
 import { CaretRight, CheckCircle } from "phosphor-react";
 import { useState } from "react";
 
+import background from '../img/mangas.jpg';
+
 export function Register(){
     const [name, setName] = useState('')
     const [cpf, setCpf] = useState('')
@@ -12,7 +14,7 @@ export function Register(){
     const [tel2, setTel2] = useState('')
 
     return(
-        <div className="flex w-[100vw] h-[100vh] justify-center items-center">
+        <div style={{backgroundImage: `url(${background})`}} className="flex w-[100vw] h-[100vh] justify-center items-center bg-[url(backgroundImage)] bg-cover">
             <div className="flex flex-col items-center bg-white p-6 rounded-lg border-2">
                 <h1 className="mb-2">Cadastro</h1>
 

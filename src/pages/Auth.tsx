@@ -1,9 +1,11 @@
 import { FacebookLogo, GoogleLogo } from "phosphor-react";
 import { Link } from "react-router-dom";
 
+import background from '../img/mangas.jpg';
+
 export function Auth(){
     return(
-        <div className="flex w-[100vw] h-[100vh] justify-center items-center">
+        <div style={{backgroundImage: `url(${background})`}} className="flex w-[100vw] h-[100vh] justify-center items-center bg-[url(backgroundImage)] bg-cover">
             <div className="flex flex-col items-center bg-white p-6 rounded-lg border-2">
                 <h1 className="mb-3">Autentique através:</h1>
 

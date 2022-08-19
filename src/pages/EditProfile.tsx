@@ -1,6 +1,8 @@
 import { CaretRight, CheckCircle } from "phosphor-react";
 import { useState } from "react";
 
+import background from '../img/mangas.jpg';
+
 export function EditProfile(){
     const [name, setName] = useState('')
     const [cpf, setCpf] = useState('')
@@ -12,7 +14,7 @@ export function EditProfile(){
     const [tel2, setTel2] = useState('')
 
     return(
-        <div className="dark:bg-slate-800 dark:text-zinc-50 flex w-[100vw] h-[100vh] justify-center items-center">
+        <div style={{backgroundImage: `url(${background})`}} className="dark:bg-slate-800 dark:text-zinc-50 flex w-[100vw] h-[100vh] justify-center items-center bg-[url(backgroundImage)] bg-cover">
             <div className="dark:bg-gray-900 flex flex-col items-center bg-white p-6 rounded-lg border-2">
                 <h1 className="mb-2">Editar Perfil</h1>
 
